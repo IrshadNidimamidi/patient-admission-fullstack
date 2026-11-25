@@ -33,6 +33,17 @@ Built for the **DScribe Software Engineer Intern — Round 1 Task**.
 - Frontend + Backend validation
 - Data persists after server restart
 
+## Screenshots
+
+### Hospital Overview
+![Hospital Overview](screenshots/overview.png)
+
+### Patient Register — Desktop
+![Patient Register Desktop](screenshots/patients-desktop.png)
+
+### Patient Register — Mobile
+![Patient Register Mobile](screenshots/patients-mobile.png)
+
 ## Steps to Run Locally
 
 ### Prerequisites
