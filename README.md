@@ -7,7 +7,9 @@ Built for the **DScribe Software Engineer Intern — Round 1 Task**.
 
 ## Live Link
 
-> 🔗 **[Add your deployed URL here after deployment]**
+> 🔗 **Frontend:** https://patient-admission-app.vercel.app
+>
+> 🔗 **Backend API:** https://patient-admission-fullstack.onrender.com/api/patients
 
 ---
 
