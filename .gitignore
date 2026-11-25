@@ -8,6 +8,7 @@ backend/.mvn/wrapper/maven-wrapper.jar
 frontend/node_modules/
 frontend/dist/
 frontend/.env
+# Allow .env.production (not a secret, just the API URL)
 
 # ── IDE / OS ──
 .idea/
