@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
-/* ── Reset ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html, body, #root { height: 100%; }
 body {
@@ -14,9 +13,6 @@ body {
 button { cursor: pointer; font: inherit; }
 input, select { font: inherit; }
 
-/* ══════════════════════════════════════
-   APP SHELL
-══════════════════════════════════════ */
 .app {
   min-height: 100vh;
   display: flex;
@@ -24,9 +20,6 @@ input, select { font: inherit; }
   background: #f4f6f9;
 }
 
-/* ══════════════════════════════════════
-   NAVBAR
-══════════════════════════════════════ */
 .navbar {
   height: 56px;
   background: #fff;
@@ -85,9 +78,6 @@ input, select { font: inherit; }
   color: #fff;
 }
 
-/* ══════════════════════════════════════
-   PAGE WRAPPER
-══════════════════════════════════════ */
 .page-wrap {
   flex: 1;
   max-width: 1100px;
@@ -96,9 +86,6 @@ input, select { font: inherit; }
   padding: 36px 24px 60px;
 }
 
-/* ══════════════════════════════════════
-   TOASTS
-══════════════════════════════════════ */
 .toast {
   position: fixed; top: 64px; right: 20px; z-index: 100;
   display: flex; align-items: center; gap: 8px;
@@ -111,9 +98,6 @@ input, select { font: inherit; }
 .toast.error   { background: #fff; border: 1.5px solid #ff4757; color: #b71c1c; }
 .toast button  { border: none; background: transparent; color: inherit; display: grid; place-items: center; margin-left: 4px; }
 
-/* ══════════════════════════════════════
-   OVERVIEW
-══════════════════════════════════════ */
 .overview {}
 
 .page-title { font-size: 26px; font-weight: 800; color: #1a1f36; margin-bottom: 4px; }
@@ -196,9 +180,6 @@ input, select { font: inherit; }
 }
 .dept-count { font-size: 13px; font-weight: 600; color: #1a1f36; width: 20px; text-align: left; }
 
-/* ══════════════════════════════════════
-   PATIENTS PAGE
-══════════════════════════════════════ */
 .patients-page {}
 
 .pt-toolbar {
@@ -356,9 +337,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .btn-danger:hover { background: #b52820; }
 
-/* ══════════════════════════════════════
-   MODALS
-══════════════════════════════════════ */
 .backdrop {
   position: fixed; inset: 0;
   background: rgba(10, 20, 40, 0.45);
@@ -389,7 +367,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .modal-close:hover { background: #f0f4ff; color: #1d6fe8; border-color: #c7d9f8; }
 
-/* Patient form */
 .pf { display: flex; flex-direction: column; gap: 0; }
 .pf-full, .pf-field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
 .pf-full label, .pf-field label { font-size: 12px; font-weight: 600; color: #525f7f; }
@@ -428,7 +405,6 @@ tbody tr:hover td { background: #fafcff; }
   border-top: 1px solid #f0f4f8;
 }
 
-/* Confirm modal */
 .confirm-modal {
   background: #fff; border-radius: 12px;
   padding: 28px 28px 24px;
@@ -439,9 +415,6 @@ tbody tr:hover td { background: #fafcff; }
 .confirm-modal p  { font-size: 13px; color: #525f7f; margin-bottom: 24px; line-height: 1.6; }
 .confirm-actions  { display: flex; justify-content: flex-end; gap: 10px; }
 
-/* ══════════════════════════════════════
-   RESPONSIVE
-══════════════════════════════════════ */
 @media (max-width: 860px) {
   .page-wrap { padding: 24px 16px 48px; }
   .navbar { padding: 0 16px; gap: 16px; }
@@ -460,9 +433,6 @@ tbody tr:hover td { background: #fafcff; }
   .modal { padding: 20px; }
 }
 
-/* ══════════════════════════════════════
-   NAVBAR EXTRAS — role switcher / viewing-as
-══════════════════════════════════════ */
 .viewing-as {
   display: flex; align-items: center; gap: 8px;
   margin-right: 4px;
@@ -473,9 +443,6 @@ tbody tr:hover td { background: #fafcff; }
   border-color: #d8e0ec; font-size: 13px;
 }
 
-/* ══════════════════════════════════════
-   FIND A DOCTOR PAGE
-══════════════════════════════════════ */
 .find-doctor-page {}
 
 .fd-search-panel {
@@ -507,7 +474,6 @@ tbody tr:hover td { background: #fafcff; }
 
 .fd-empty { color: #aab4c8; font-size: 14px; padding: 24px 0; }
 
-/* Doctor cards grid */
 .doc-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -548,11 +514,9 @@ tbody tr:hover td { background: #fafcff; }
 .doc-fee { font-size: 14px; font-weight: 700; color: #1a1f36; }
 .doc-footer-btns { display: flex; gap: 8px; }
 
-/* Extra pill colours */
 .pill-teal  { background: #edfaf8; color: #0e7a6e; border-color: #9de8d8; }
 .pill-amber { background: #fffbeb; color: #92610a; border-color: #fcd787; }
 
-/* Small buttons */
 .btn-primary-sm {
   display: inline-flex; align-items: center; gap: 5px;
   height: 32px; padding: 0 14px;
@@ -575,9 +539,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .btn-outline-sm:hover { border-color: #1d6fe8; color: #1d6fe8; }
 
-/* ══════════════════════════════════════
-   BOOK APPOINTMENT MODAL
-══════════════════════════════════════ */
 .book-modal { width: min(500px, 100%); }
 .book-modal-sub { font-size: 13px; color: #8898aa; margin-top: 3px; }
 .book-form { display: flex; flex-direction: column; gap: 0; }
@@ -588,9 +549,6 @@ tbody tr:hover td { background: #fafcff; }
   font-size: 12px; color: #92610a; line-height: 1.6;
 }
 
-/* ══════════════════════════════════════
-   MY APPOINTMENTS PAGE
-══════════════════════════════════════ */
 .my-appts-page {}
 .ma-header {
   display: flex; justify-content: space-between; align-items: flex-start;
@@ -632,9 +590,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .btn-ghost-sm:hover { border-color: #d93025; color: #d93025; }
 
-/* ══════════════════════════════════════
-   PLACEHOLDER (Doctor role)
-══════════════════════════════════════ */
 .placeholder-page {
   display: flex; flex-direction: column; align-items: center;
   justify-content: center; padding: 80px 24px;
@@ -644,9 +599,6 @@ tbody tr:hover td { background: #fafcff; }
 .placeholder-page h2 { font-size: 20px; font-weight: 700; color: #525f7f; }
 .placeholder-page p  { font-size: 14px; color: #aab4c8; }
 
-/* ══════════════════════════════════════
-   RESPONSIVE ADDITIONS
-══════════════════════════════════════ */
 @media (max-width: 860px) {
   .doc-grid { grid-template-columns: 1fr; }
   .fd-search-panel { flex-direction: column; }
@@ -661,9 +613,6 @@ tbody tr:hover td { background: #fafcff; }
   .viewing-as { font-size: 11px; }
 }
 
-/* ══════════════════════════════════════
-   PAYMENTS PAGE
-══════════════════════════════════════ */
 .payments-page {}
 .accent-link { color: #1d6fe8; }
 
@@ -706,9 +655,6 @@ tbody tr:hover td { background: #fafcff; }
 .pay-row-right { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .pay-amount    { font-size: 14px; font-weight: 700; color: #1a1f36; }
 
-/* ══════════════════════════════════════
-   PRESCRIPTIONS & REPORTS PAGE
-══════════════════════════════════════ */
 .rx-page {}
 
 .rx-card {
@@ -734,12 +680,8 @@ tbody tr:hover td { background: #fafcff; }
 
 .rx-footer { display: flex; justify-content: flex-end; }
 
-/* extra pill colour for reports */
 .pill-blue { background: #eef3fd; color: #1d6fe8; border-color: #c7d9f8; }
 
-/* ══════════════════════════════════════
-   DOCTOR PANEL
-══════════════════════════════════════ */
 .dr-page {}
 
 .dr-header {
@@ -793,9 +735,6 @@ tbody tr:hover td { background: #fafcff; }
   .dr-schedule-table .dr-reason { display: none; }
 }
 
-/* ══════════════════════════════════════
-   DOCTOR APPOINTMENT CARDS
-══════════════════════════════════════ */
 .appt-list { display: flex; flex-direction: column; gap: 12px; }
 
 .appt-card {
@@ -846,7 +785,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .appt-action-btn:hover { border-color: #1d6fe8; color: #1d6fe8; }
 
-/* extra pill for cancelled */
 .pill-red { background: #fff0f0; color: #d93025; border-color: #f5b8b4; }
 
 @media (max-width: 700px) {
@@ -854,9 +792,6 @@ tbody tr:hover td { background: #fafcff; }
   .appt-actions { width: 100%; justify-content: flex-start; }
 }
 
-/* ══════════════════════════════════════
-   NOTE MODAL
-══════════════════════════════════════ */
 .note-modal { width: min(480px, 100%); }
 
 .note-textarea {
@@ -882,9 +817,6 @@ tbody tr:hover td { background: #fafcff; }
   padding: 20px 0 10px;
 }
 
-/* ══════════════════════════════════════
-   VIEW RECORD BUTTON
-══════════════════════════════════════ */
 .view-record-btn {
   display: inline-flex; align-items: center; gap: 5px;
   height: 30px; padding: 0 12px;
@@ -896,9 +828,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .view-record-btn:hover { border-color: #1d6fe8; color: #1d6fe8; }
 
-/* ══════════════════════════════════════
-   CLINICAL RECORD MODAL
-══════════════════════════════════════ */
 .cr-modal {
   width: min(640px, 100%);
   max-height: 88vh;
@@ -955,9 +884,6 @@ tbody tr:hover td { background: #fafcff; }
 .cr-note-diag  { font-size: 13px; color: #1a1f36; }
 .cr-note-text  { font-size: 13px; color: #525f7f; line-height: 1.6; }
 
-/* ══════════════════════════════════════
-   OVERVIEW — 8 STAT CARDS
-══════════════════════════════════════ */
 .stat-grid-8 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -965,9 +891,6 @@ tbody tr:hover td { background: #fafcff; }
   margin-bottom: 24px;
 }
 
-/* ══════════════════════════════════════
-   BAR CHART
-══════════════════════════════════════ */
 .bar-chart {
   display: flex;
   gap: 0;
@@ -997,7 +920,7 @@ tbody tr:hover td { background: #fafcff; }
   gap: 0;
   border-bottom: 1.5px solid #e3e8ef;
   position: relative;
-  height: calc(100% - 24px); /* subtract x-label space */
+  height: calc(100% - 24px); 
 }
 
 .bar-col {
@@ -1014,7 +937,7 @@ tbody tr:hover td { background: #fafcff; }
 
 .bar-track {
   width: 60%;
-  flex: 1;               /* fill available height above x-label */
+  flex: 1;               
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1027,7 +950,7 @@ tbody tr:hover td { background: #fafcff; }
   border-radius: 3px 3px 0 0;
   transition: height 0.4s ease, background 0.15s;
   min-height: 3px;
-  /* height is set inline as a percentage of a fixed px value */
+  
 }
 
 .bar-x-label {
@@ -1056,9 +979,6 @@ tbody tr:hover td { background: #fafcff; }
   pointer-events: none;
 }
 
-/* ══════════════════════════════════════
-   QUICK LINKS — 3 COLUMN
-══════════════════════════════════════ */
 .quick-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1086,9 +1006,6 @@ tbody tr:hover td { background: #fafcff; }
   .bar-chart    { height: 150px; }
 }
 
-/* ══════════════════════════════════════
-   DOCTORS & STAFF PAGE
-══════════════════════════════════════ */
 .doctors-page {}
 
 .doc-page-header {
@@ -1096,11 +1013,9 @@ tbody tr:hover td { background: #fafcff; }
   margin-bottom: 24px; flex-wrap: wrap; gap: 12px;
 }
 
-/* Doctor name + email in table cell */
 .doc-cell-name  { font-size: 13px; font-weight: 600; color: #1a1f36; margin-bottom: 2px; }
 .doc-cell-email { font-size: 11px; color: #1d6fe8; }
 
-/* Availability cell — wrap long text */
 .doc-avail-cell {
   font-size: 12px; color: #1d6fe8;
   max-width: 320px;
@@ -1108,7 +1023,6 @@ tbody tr:hover td { background: #fafcff; }
   line-height: 1.6;
 }
 
-/* Row action icons */
 .doc-actions { display: flex; align-items: center; gap: 8px; justify-content: flex-end; }
 
 .doc-action-btn {
@@ -1121,7 +1035,6 @@ tbody tr:hover td { background: #fafcff; }
 .doc-action-btn:hover      { background: #f0f4ff; color: #1d6fe8; border-color: #c7d9f8; }
 .doc-delete-btn:hover      { background: #fff0f0; color: #d93025; border-color: #f5b8b4; }
 
-/* ── Delete confirmation ─ */
 .confirm-modal-head {
   display: flex; justify-content: space-between; align-items: center;
   margin-bottom: 10px;
@@ -1138,12 +1051,8 @@ tbody tr:hover td { background: #fafcff; }
 }
 .btn-delete-doctor:hover { background: #ffe0e0; border-color: #d93025; }
 
-/* ══════════════════════════════════════
-   DOCTOR FORM MODAL
-══════════════════════════════════════ */
 .doctor-modal { width: min(580px, 100%); }
 
-/* Availability slot builder */
 .slot-builder {
   display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
   margin-top: 8px;
@@ -1174,7 +1083,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .slot-add-btn:hover { border-color: #1d6fe8; color: #1d6fe8; }
 
-/* Slot tags */
 .slot-tags {
   display: flex; flex-wrap: wrap; gap: 8px;
   margin-top: 10px;
@@ -1192,7 +1100,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .slot-tag-remove:hover { color: #d93025; }
 
-/* Responsive */
 @media (max-width: 860px) {
   .doc-avail-cell { max-width: 200px; }
   .slot-builder   { flex-direction: column; align-items: flex-start; }
@@ -1201,9 +1108,6 @@ tbody tr:hover td { background: #fafcff; }
   .doc-page-header { flex-direction: column; }
 }
 
-/* ══════════════════════════════════════
-   SCHEDULING PAGE
-══════════════════════════════════════ */
 .sched-page {}
 
 .sched-filters {
@@ -1240,9 +1144,6 @@ tbody tr:hover td { background: #fafcff; }
 .sched-cancel-btn:hover:not(.disabled) { opacity: 0.7; }
 .sched-cancel-btn.disabled { opacity: 0.3; cursor: not-allowed; color: #aab4c8; }
 
-/* ══════════════════════════════════════
-   BILLING PAGE
-══════════════════════════════════════ */
 .billing-page {}
 
 .billing-toolbar {
@@ -1258,31 +1159,18 @@ tbody tr:hover td { background: #fafcff; }
 }
 .mark-paid-btn:hover { color: #1d6fe8; }
 
-/* ══════════════════════════════════════
-   REPORTS PAGE
-══════════════════════════════════════ */
 .reports-page {}
 
-/* ════════════════════════════════════════════════════════
-   COMPREHENSIVE RESPONSIVE OVERHAUL
-   Desktop ≥1024px | Tablet 600–1023px | Mobile <600px
-════════════════════════════════════════════════════════ */
-
-/* ── Shared: table horizontal scroll on all small screens ── */
 .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
 table { min-width: 480px; }
 
-/* ── Shared: modals full-width on mobile ── */
 .modal, .confirm-modal, .delete-modal {
   max-height: 95dvh;
   overflow-y: auto;
 }
 
-/* ══════════════
-   TABLET  ≤1023px
-══════════════ */
 @media (max-width: 1023px) {
-  /* Navbar: allow wrapping */
+  
   .navbar {
     height: auto;
     min-height: 56px;
@@ -1293,7 +1181,7 @@ table { min-width: 480px; }
   .navbar-left  { flex-shrink: 0; }
   .navbar-right { margin-left: auto; }
   .nav-tabs {
-    order: 10;          /* push tabs to their own row */
+    order: 10;          
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
@@ -1302,168 +1190,124 @@ table { min-width: 480px; }
   }
   .nav-tab { white-space: nowrap; flex-shrink: 0; }
 
-  /* Page padding */
-  .page-wrap { padding: 20px 16px 48px; }
+.page-wrap { padding: 20px 16px 48px; }
 
-  /* Stat grids */
-  .stat-grid        { grid-template-columns: 1fr 1fr; }
+.stat-grid        { grid-template-columns: 1fr 1fr; }
   .stat-grid-8      { grid-template-columns: repeat(2, 1fr); }
 
-  /* Overview quick links */
-  .quick-grid       { grid-template-columns: 1fr 1fr; }
+.quick-grid       { grid-template-columns: 1fr 1fr; }
   .quick-grid-3     { grid-template-columns: 1fr 1fr; }
 
-  /* Doctor cards (find a doctor) */
-  .doc-grid         { grid-template-columns: 1fr 1fr; }
+.doc-grid         { grid-template-columns: 1fr 1fr; }
 
-  /* Doctor page header */
-  .doc-page-header  { flex-direction: row; flex-wrap: wrap; gap: 10px; }
+.doc-page-header  { flex-direction: row; flex-wrap: wrap; gap: 10px; }
 
-  /* Dashboard/DR headers */
-  .dr-header        { flex-direction: column; gap: 12px; }
+.dr-header        { flex-direction: column; gap: 12px; }
 
-  /* Bar chart x labels */
-  .bar-x-label      { font-size: 9px; }
+.bar-x-label      { font-size: 9px; }
   .bar-chart        { height: 180px; }
 
-  /* Patient form grid */
-  .pf-row           { grid-template-columns: 1fr 1fr; gap: 12px; }
+.pf-row           { grid-template-columns: 1fr 1fr; gap: 12px; }
 
-  /* Filter rows */
-  .filter-row       { grid-template-columns: 1fr 1fr; }
+.filter-row       { grid-template-columns: 1fr 1fr; }
   .filter-row-2     { grid-template-columns: 1fr auto; }
 
-  /* Scheduling filters wrap */
-  .sched-filters    { flex-wrap: wrap; gap: 8px; }
+.sched-filters    { flex-wrap: wrap; gap: 8px; }
 
-  /* My appointments header */
-  .ma-header        { flex-direction: column; gap: 10px; }
+.ma-header        { flex-direction: column; gap: 10px; }
 
-  /* Appointment cards */
-  .appt-card        { flex-direction: column; align-items: flex-start; gap: 10px; }
+.appt-card        { flex-direction: column; align-items: flex-start; gap: 10px; }
   .appt-actions     { width: 100%; flex-wrap: wrap; }
 
-  /* Doctor stat grid inline */
-  .stat-grid[style] { grid-template-columns: 1fr 1fr !important; }
+.stat-grid[style] { grid-template-columns: 1fr 1fr !important; }
 
-  /* Availability cell in doctors table */
-  .doc-avail-cell   { max-width: 180px; font-size: 11px; }
+.doc-avail-cell   { max-width: 180px; font-size: 11px; }
 
-  /* Slot builder */
-  .slot-builder     { flex-wrap: wrap; gap: 8px; }
+.slot-builder     { flex-wrap: wrap; gap: 8px; }
   .time-input       { width: 100px; }
 }
 
-/* ══════════════
-   MOBILE  ≤599px
-══════════════ */
 @media (max-width: 599px) {
-  /* Navbar: stack brand + controls */
+  
   .navbar {
     padding: 10px 12px;
   }
-  .brand-sub    { display: none; }  /* hide tagline */
-  .viewing-label { display: none; } /* hide "Viewing as" label */
+  .brand-sub    { display: none; }  
+  .viewing-label { display: none; } 
   .navbar-right  { gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
   .role-btn      { height: 28px; padding: 0 10px; font-size: 11px; }
 
-  /* Tighter page padding */
-  .page-wrap    { padding: 14px 12px 40px; }
+.page-wrap    { padding: 14px 12px 40px; }
 
-  /* Typography */
-  .page-title   { font-size: 20px; }
+.page-title   { font-size: 20px; }
   .dash-title   { font-size: 20px; }
 
-  /* Stat grids: 1 column */
-  .stat-grid    { grid-template-columns: 1fr; gap: 10px; }
+.stat-grid    { grid-template-columns: 1fr; gap: 10px; }
   .stat-grid-8  { grid-template-columns: 1fr 1fr; gap: 10px; }
   .stat-value   { font-size: 28px; }
 
-  /* Overview quick links */
-  .quick-grid   { grid-template-columns: 1fr; }
+.quick-grid   { grid-template-columns: 1fr; }
   .quick-grid-3 { grid-template-columns: 1fr; }
   .quick-card-link { justify-content: flex-start; padding: 4px 0; }
 
-  /* Doctor cards: single column */
-  .doc-grid     { grid-template-columns: 1fr; }
+.doc-grid     { grid-template-columns: 1fr; }
 
-  /* Doc footer stacks */
-  .doc-footer   { flex-direction: column; align-items: flex-start; }
+.doc-footer   { flex-direction: column; align-items: flex-start; }
 
-  /* Find doctor search panel: stacks */
-  .fd-search-panel { flex-direction: column; gap: 8px; }
+.fd-search-panel { flex-direction: column; gap: 8px; }
   .fd-search-panel .ns-wrap { width: 100%; }
   .fd-search-panel .ns-wrap select { width: 100%; min-width: unset; }
 
-  /* Patient form: single column always */
-  .pf-row       { grid-template-columns: 1fr; gap: 10px; }
+.pf-row       { grid-template-columns: 1fr; gap: 10px; }
 
-  /* Doctor form modal */
-  .doctor-modal { padding: 16px; }
+.doctor-modal { padding: 16px; }
   .slot-builder { flex-direction: column; align-items: stretch; gap: 8px; }
   .time-input   { width: 100%; }
   .slot-add-btn { width: 100%; justify-content: center; }
 
-  /* Modals: edge-to-edge */
-  .backdrop     { padding: 0; align-items: flex-end; }
+.backdrop     { padding: 0; align-items: flex-end; }
   .modal        { border-radius: 14px 14px 0 0; width: 100%; max-height: 92dvh; padding: 20px 16px; }
   .confirm-modal { border-radius: 14px; width: calc(100% - 24px); margin: 12px; }
   .delete-modal  { border-radius: 14px; width: calc(100% - 24px); margin: 12px; }
 
-  /* Toolbar: search + button stack */
-  .pt-toolbar      { flex-direction: column; align-items: stretch; gap: 8px; }
+.pt-toolbar      { flex-direction: column; align-items: stretch; gap: 8px; }
   .pt-search-wrap  { max-width: 100%; }
   .pt-toolbar-right { flex-wrap: wrap; gap: 8px; justify-content: space-between; }
   .btn-primary     { justify-content: center; }
 
-  /* Filters */
-  .pt-filters      { flex-direction: column; gap: 8px; }
+.pt-filters      { flex-direction: column; gap: 8px; }
   .ns-wrap select  { width: 100%; min-width: unset; }
 
-  /* Register/Doctor page headers */
-  .reg-header     { flex-direction: column; gap: 6px; }
+.reg-header     { flex-direction: column; gap: 6px; }
   .doc-page-header { flex-direction: column; gap: 8px; }
   .dr-header-btns { flex-wrap: wrap; gap: 8px; }
 
-  /* Scheduling filters */
-  .sched-filters   { flex-direction: column; align-items: stretch; gap: 8px; }
+.sched-filters   { flex-direction: column; align-items: stretch; gap: 8px; }
   .sched-date-input { width: 100%; }
 
-  /* Billing toolbar */
-  .billing-toolbar { flex-direction: column; align-items: stretch; gap: 8px; }
+.billing-toolbar { flex-direction: column; align-items: stretch; gap: 8px; }
 
-  /* Bar chart */
-  .bar-chart    { height: 140px; }
+.bar-chart    { height: 140px; }
   .bar-x-label  { font-size: 8px; }
 
-  /* Appointment cards */
-  .appt-card    { flex-direction: column; align-items: flex-start; }
+.appt-card    { flex-direction: column; align-items: flex-start; }
   .appt-actions { width: 100%; flex-wrap: wrap; gap: 6px; }
 
-  /* Doctor schedule table: hide reason on small */
-  .dr-reason    { display: none; }
+.dr-reason    { display: none; }
 
-  /* My appts filter tabs scroll */
-  .ma-filter-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; padding-bottom: 2px; }
+.ma-filter-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; padding-bottom: 2px; }
   .ma-ftab        { flex-shrink: 0; }
 
-  /* Doctor stat grid */
-  .stat-grid[style] { grid-template-columns: 1fr 1fr !important; }
+.stat-grid[style] { grid-template-columns: 1fr 1fr !important; }
 
-  /* Toast */
-  .toast { right: 8px; left: 8px; }
+.toast { right: 8px; left: 8px; }
 
-  /* Ward occupancy note */
-  .ward-note span { font-size: 11px; }
+.ward-note span { font-size: 11px; }
 
-  /* Clinical record modal tabs scroll */
-  .cr-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
+.cr-tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; flex-wrap: nowrap; }
   .cr-tab  { flex-shrink: 0; }
 }
 
-/* ══════════════════════════════════════════
-   VERY SMALL  ≤374px  (small Android phones)
-══════════════════════════════════════════ */
 @media (max-width: 374px) {
   .stat-grid-8  { grid-template-columns: 1fr; }
   .role-btn     { padding: 0 7px; font-size: 10px; }
@@ -1472,9 +1316,6 @@ table { min-width: 480px; }
   .page-title   { font-size: 18px; }
 }
 
-/* ══════════════════════════════════════
-   NEW PIXEL-BASED BAR CHART
-══════════════════════════════════════ */
 .bar-chart-wrap {
   display: flex;
   gap: 8px;
@@ -1490,7 +1331,7 @@ table { min-width: 480px; }
 
 .bar-area {
   display: flex;
-  align-items: flex-end;   /* bars grow upward from bottom */
+  align-items: flex-end;   
   gap: 4px;
   border-bottom: 1.5px solid #e3e8ef;
   position: relative;
