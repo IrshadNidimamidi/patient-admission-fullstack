@@ -4,7 +4,7 @@ import {
   HeartPulse, Plus, Search, Stethoscope, Trash2, Users, UserCheck, X
 } from "lucide-react";
 
-const API = `${import.meta.env.VITE_API_URL || "http://localhost:8080/api"}/patients`;
+const API = `${import.meta.env.VITE_API_URL || "https://patient-admission-fullstack.onrender.com/api"}/patients`;
 
 const OPTIONS = {
   gender:     ["Male", "Female", "Other"],
