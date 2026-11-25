@@ -36,13 +36,13 @@ Built for the **DScribe Software Engineer Intern — Round 1 Task**.
 ## Screenshots
 
 ### Hospital Overview
-![Hospital Overview](screenshots/overview.png)
+![Hospital Overview](screenshots/OverView.png)
 
-### Patient Register — Desktop
-![Patient Register Desktop](screenshots/patients-desktop.png)
+### Patient Register
+![Patient Register](screenshots/PatientDetails.png)
 
-### Patient Register — Mobile
-![Patient Register Mobile](screenshots/patients-mobile.png)
+### Add Patient
+![Add Patient](screenshots/AddPatient.png)
 
 ## Steps to Run Locally
 
