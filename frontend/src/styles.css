@@ -40,7 +40,6 @@ input, select { font: inherit; }
   z-index: 20;
 }
 
-/* Brand */
 .navbar-left { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .brand-logo {
   width: 36px; height: 36px;
@@ -52,7 +51,6 @@ input, select { font: inherit; }
 .brand-name { font-size: 15px; font-weight: 700; color: #1a1f36; display: block; line-height: 1.2; }
 .brand-sub  { font-size: 11px; color: #8898aa; display: block; line-height: 1.2; }
 
-/* Nav tabs */
 .nav-tabs { display: flex; align-items: center; gap: 2px; flex: 1; }
 .nav-tab {
   height: 36px; padding: 0 14px;
@@ -70,7 +68,6 @@ input, select { font: inherit; }
   border: 1.5px solid #c7d9f8;
 }
 
-/* Role switcher */
 .navbar-right { display: flex; align-items: center; gap: 6px; flex-shrink: 0; margin-left: auto; }
 .role-btn {
   height: 32px; padding: 0 14px;
@@ -122,7 +119,6 @@ input, select { font: inherit; }
 .page-title { font-size: 26px; font-weight: 800; color: #1a1f36; margin-bottom: 4px; }
 .page-sub   { font-size: 14px; color: #8898aa; margin-bottom: 28px; }
 
-/* Stat grid */
 .stat-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -146,7 +142,6 @@ input, select { font: inherit; }
 }
 .stat-value { font-size: 36px; font-weight: 800; color: #1a1f36; line-height: 1; }
 
-/* Quick links grid */
 .quick-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -172,7 +167,6 @@ input, select { font: inherit; }
 .quick-title { font-size: 14px; font-weight: 700; color: #1a1f36; }
 .quick-sub   { font-size: 12px; color: #8898aa; }
 
-/* Dept chart */
 .chart-panel {
   background: #fff;
   border: 1px solid #e3e8ef;
@@ -207,7 +201,6 @@ input, select { font: inherit; }
 ══════════════════════════════════════ */
 .patients-page {}
 
-/* Toolbar */
 .pt-toolbar {
   display: flex; align-items: center; gap: 12px;
   margin-bottom: 14px;
@@ -244,7 +237,6 @@ input, select { font: inherit; }
 }
 .clear-link:hover { color: #1d6fe8; }
 
-/* Filters row */
 .pt-filters {
   display: flex; gap: 10px; flex-wrap: wrap;
   margin-bottom: 16px;
@@ -268,7 +260,6 @@ input, select { font: inherit; }
   pointer-events: none; color: #aab4c8;
 }
 
-/* Table */
 .table-wrap {
   background: #fff;
   border: 1px solid #e3e8ef;
@@ -301,7 +292,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .td-actions { display: flex; align-items: center; gap: 2px; }
 
-/* Status pills */
 .pill {
   display: inline-flex; align-items: center; gap: 4px;
   font-size: 12px; font-weight: 600;
@@ -311,7 +301,6 @@ tbody tr:hover td { background: #fafcff; }
 .pill-green  { background: #edfdf5; color: #0a7a45; border-color: #9de8c0; }
 .pill-grey   { background: #f3f4f6; color: #6b7280; border-color: #d1d5db; }
 
-/* Action links */
 .action-link {
   display: inline-flex; align-items: center; gap: 4px;
   border: none; background: transparent;
@@ -325,7 +314,6 @@ tbody tr:hover td { background: #fafcff; }
 .discharge-link:hover { background: #f0fff7; color: #0a7a45; }
 .delete-link:hover    { background: #fff0f0; color: #d93025; }
 
-/* Spinner */
 .spinner {
   display: inline-block;
   width: 16px; height: 16px;
@@ -337,7 +325,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* Buttons */
 .btn-primary {
   display: inline-flex; align-items: center; gap: 7px;
   height: 38px; padding: 0 18px;
@@ -768,7 +755,6 @@ tbody tr:hover td { background: #fafcff; }
 }
 .btn-link:hover { color: #1d6fe8; }
 
-/* Today's schedule panel */
 .dr-schedule-panel {
   background: #fff;
   border: 1px solid #e3e8ef;

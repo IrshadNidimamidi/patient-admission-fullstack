@@ -526,7 +526,6 @@ function NoteModal({ patient, doctor, onClose, onSave }) {
   );
 }
 
-
 // ─── Doctor My Patients ───────────────────────────────────────────────────────
 function DoctorMyPatients({ actingAs, patients }) {
   const myPatients = patients.filter(p => p.doctor === actingAs);
@@ -586,7 +585,6 @@ function DoctorMyPatients({ actingAs, patients }) {
     </div>
   );
 }
-
 
 // ─── Clinical Record Modal ────────────────────────────────────────────────────
 function ClinicalRecordModal({ patient, actingAs, onClose }) {
@@ -954,7 +952,6 @@ function ReportsPage({ patients }) {
   );
 }
 
-
 const SCHED_APPTS_INIT = [
   { id:1,  patient:"Tara Bose",      doctor:"Dr. Sophie Laurent", dept:"Orthopedics",      date:"2027-01-05", time:"09:00", fee:700,  status:"Cancelled",  paid:"Unpaid" },
   { id:2,  patient:"Vikram Rao",     doctor:"Dr. Nia Okafor",     dept:"Internal Medicine",date:"2026-11-27", time:"15:00", fee:600,  status:"Scheduled",  paid:"Unpaid" },
@@ -1177,7 +1174,6 @@ function RescheduleModal({ appt, onClose, onSave }) {
     </div>
   );
 }
-
 
 const WARDS_LIST = ["Ward 3", "Ward 5", "ICU", "Maternity", "General Ward A", "General Ward B", "Surgical Post-Op", "Pediatrics Ward"];
 const DEPT_LIST  = ["Cardiology", "General Medicine", "Neurology", "Obstetrics", "Orthopedics", "Pediatrics", "General Surgery", "Internal Medicine"];
@@ -1443,7 +1439,6 @@ function DoctorFormModal({ doc, title, subtitle, onClose, onSave }) {
     </div>
   );
 }
-
 
 // Generate last-7-days appointment counts from ALL_APPTS
 function getLast7Days() {
