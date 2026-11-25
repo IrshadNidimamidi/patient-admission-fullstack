@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/patients")
-@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000"})
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:3000", "https://patient-admission-fullstack.vercel.app", "https://patient-admission-fullstack-git-main-irshadnidimamidis-projects.vercel.app"}, allowedHeaders = "*")
 public class PatientController {
     private final PatientService service;
 
